@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+}
+
+body {
+  position: relative;
+  background-color: #00a7b9;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+body .exam {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: 0px auto;
+}
+
+body .exam .logo {
+  width: 20%;
+  margin-right: 70px;
+  margin-top: 100px;
+}
+
+body .exam .question {
+  width: 70%;
+  border-radius: 41px;
+  background-color: rgba(216, 216, 216, 0.4);
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+
+body .exam .question h1 {
+  margin: 34px;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+body .exam .question .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .exam .question .images .img__inner {
+  margin: 0px 69px;
+}
+
+body .exam .question .images .img__inner img:hover {
+  cursor: pointer;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .exam .question .images .img__inner .text {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+body .audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: 20px auto;
+  width: 100%;
+}
+
+body .audio .rwd-audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+body .audio .rwd-audio .disc {
+  width: 365px;
+}
+
+body .audio .rwd-audio .disc img {
+  width: 100%;
+}
+
+body .audio .rwd-audio .audio-controls {
+  display: none;
+}
+
+body .audio .desk-exambar {
+  width: 60%;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls .control {
+  padding: 12px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls .control .button {
+  color: white;
+  cursor: pointer;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls .control .play, body .audio .desk-exambar .audio-controls #player-controls .control .pause {
+  display: none;
+  font-size: 68px;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls .control .active {
+  display: block;
+}
+
+body .audio .desk-exambar .audio-controls #player-controls .control .fa-backward, body .audio .desk-exambar .audio-controls #player-controls .control .fa-arrow-rotate-left {
+  font-size: 36px;
+}
+
+body .audio .desk-exambar .exam-bar {
+  margin: 90px auto 0px;
+  position: relative;
+  width: 100%;
+  height: 41px;
+  border-radius: 41px;
+  background-color: rgba(216, 216, 216, 0.4);
+}
+
+body .audio .desk-exambar .exam-bar .bar {
+  position: absolute;
+  left: 0;
+  height: 41px;
+  background-color: white;
+  border-radius: 41px;
+}
+
+body .audio .desk-exambar .exam-bar .bar--1 {
+  width: calc( 100% - 80%);
+}
+
+body .audio .desk-exambar .exam-bar .bar--2 {
+  width: calc( 100% - 60%);
+}
+
+body .audio .desk-exambar .exam-bar .bar--3 {
+  width: calc( 100% - 40%);
+}
+
+body .audio .desk-exambar .exam-bar .bar--4 {
+  width: calc( 100% - 20%);
+}
+
+body .audio .desk-exambar .exam-bar .bar--5 {
+  width: 100%;
+}
+
+body .audio .desk-exambar .exam-bar .num {
+  font-size: 36px;
+}
+
+body .audio .desk-exambar .exam-bar .num--1, body .audio .desk-exambar .exam-bar .num--2 {
+  color: white;
+}
+
+body .audio .desk-exambar .exam-bar .num--3, body .audio .desk-exambar .exam-bar .num--4, body .audio .desk-exambar .exam-bar .num--5 {
+  color: #00a7b9;
+}
+
+body .modal .modal-dialog .modal-content {
+  background-color: black;
+}
+
+body .modal .modal-dialog .modal-content .modal-header {
+  border-bottom: 0px;
+  position: relative;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .btn-close {
+  color: white;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .fa-solid {
+  color: white;
+  position: absolute;
+  right: 15px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body {
+  text-align: center;
+  font-size: 36px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body p {
+  color: white;
+}
+
+body .modal .modal-dialog .modal-content .modal-body .answer {
+  margin: 0px auto 20px;
+}
+
+body .modal .modal-dialog .modal-content .modal-body .btn {
+  background-color: #242424;
+  color: white;
+}
+
+body .modal .modal-dialog .modal-content .modal-body .btn:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 1440px) {
+  body .exam .question {
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
+  body .exam .question h1 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  body .exam .question .images .img__inner {
+    margin: 0px 20px;
+  }
+  body .exam .question .images .img__inner .text {
+    font-size: 20px;
+  }
+  body .audio {
+    margin: 50px auto 0px;
+    width: 100%;
+  }
+  body .audio .desk-exambar .exam-bar {
+    margin: 50px auto 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    margin: 0 auto;
+  }
+  body .exam {
+    display: block;
+  }
+  body .exam .logo {
+    margin: 90px auto;
+    width: 90%;
+  }
+  body .exam .question {
+    width: 90%;
+    margin: 60px auto 0px;
+    padding-bottom: 40px;
+    border-radius: 16px;
+  }
+  body .exam .question h1 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+  body .exam .question .images .img__inner {
+    margin: 0px 20px;
+  }
+  body .exam .question .images .img__inner .text {
+    font-size: 20px;
+  }
+  body .audio {
+    margin: 50px auto 0px;
+    width: 100%;
+    display: block;
+  }
+  body .audio .rwd-audio {
+    width: 100%;
+  }
+  body .audio .rwd-audio .audio-controls {
+    display: block;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control {
+    padding: 12px 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .button {
+    color: white;
+    cursor: pointer;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .play, body .audio .rwd-audio .audio-controls #player-controls .control .pause {
+    display: none;
+    font-size: 68px;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .active {
+    display: block;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .fa-backward, body .audio .rwd-audio .audio-controls #player-controls .control .fa-arrow-rotate-left {
+    font-size: 36px;
+  }
+  body .audio .desk-exambar {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .audio .desk-exambar .audio-controls {
+    display: none;
+  }
+  body .audio .desk-exambar .exam-bar {
+    margin: 50px auto 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  body .exam {
+    display: block;
+  }
+  body .exam .logo {
+    margin: 20px auto 10px;
+    width: 30%;
+  }
+  body .exam .question {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0px 15px;
+    border-radius: 16px;
+  }
+  body .exam .question h1 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 12px;
+  }
+  body .exam .question .images .img__inner {
+    margin: 0px;
+  }
+  body .exam .question .images .img__inner .text {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  body .audio {
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+  }
+  body .audio .rwd-audio {
+    width: 100%;
+  }
+  body .audio .rwd-audio .disc {
+    width: 40%;
+  }
+  body .audio .rwd-audio .audio-controls {
+    width: 60%;
+    display: block;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control {
+    padding: 12px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .play, body .audio .rwd-audio .audio-controls #player-controls .control .pause {
+    font-size: 24px;
+  }
+  body .audio .rwd-audio .audio-controls #player-controls .control .fa-backward, body .audio .rwd-audio .audio-controls #player-controls .control .fa-arrow-rotate-left {
+    font-size: 24px;
+  }
+  body .audio .desk-exambar .audio-controls {
+    display: none;
+  }
+  body .audio .desk-exambar .exam-bar {
+    margin: 0px auto 50px;
+    height: 23px;
+    border-radius: 23px;
+  }
+  body .audio .desk-exambar .exam-bar .bar {
+    height: 23px;
+    border-radius: 23px;
+  }
+  body .audio .desk-exambar .exam-bar .num {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  body .modal .modal-dialog .modal-content .modal-body {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=exam.css.map */

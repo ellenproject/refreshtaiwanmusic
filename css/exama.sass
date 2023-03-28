@@ -1,0 +1,339 @@
+*
+    margin: 0
+    padding: 0
+    max-width: 100%
+    position: relative
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+
+body
+    position: relative
+    background-color: rgb(0, 167, 185)
+    font-family: 'Roboto', sans-serif
+    height: 100%
+    .disc-cover
+        display: flex
+        margin: 30px auto
+        justify-content: center
+        .cover
+            width: 505px
+            height: 505px
+            img
+                width: 100%
+        .video
+            position: relative
+            width: 505px
+            height: 505px
+            border-radius: 50%
+            -webkit-transform: rotate(0.000001deg)
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            transform: translateX(-30%)
+            z-index: -1
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6)
+            .video-circle
+                border-radius: 50%
+                object-fit: cover
+            .video-circle--2
+                object-fit: unset
+            .cover-circle
+                position: absolute
+                z-index: 1030
+                background: url(../images/cover-circle.png) center center / cover no-repeat
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 102px
+                height: 102px
+    .info
+        position: relative
+        margin: 0 auto
+        // width: 1667px
+        width: 70%
+        // height: 244px
+        // height: 100%
+        padding: 24px
+        border-radius: 20px
+        .description
+            position: relative
+            font-size: 28px
+            line-height: 40px
+            font-weight: 500
+            margin: 0px auto 50px
+        .next
+            position: absolute
+            bottom: 10%
+            right: 10%
+            .btn
+                position: relative
+                font-size: 28px
+                font-weight: 500
+                &:hover
+                    color: rgb(0, 167, 185)
+                    &::after
+                        background-color: rgb(0, 167, 185)
+                &::after
+                    position: absolute
+                    content: ''
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    height: 3px
+                    background-color: #000
+    .info--1
+        background-color: rgb(203,196,187)
+    .info--2
+        background-color: rgb(222,215,205)
+    .info--3
+        background-color: rgb(47,56,118)
+        color: rgb(255,255,255)
+        .next
+            .btn--3
+                color: rgb(255,255,255)
+                &::after
+                    background-color: rgb(255,255,255)
+    .info--4
+        background-color: rgb(255,255,255)
+    .info--5
+        background-color: rgb(255,255,255)
+    .audio
+        display: flex
+        text-align: center
+        justify-content: center
+        align-items: center
+        color: rgb(255, 255, 255)
+        margin: 30px auto 0px
+        // width: 1667px
+        width: 70%
+        align-items: center
+        .rwd-audio
+            display: flex
+            align-items: center
+            .disc
+                width: 365px
+                display: none
+                img
+                    width: 100%
+            .audio-controls
+                #player-controls
+                    justify-content: center
+                    display: flex
+                    .control
+                        padding: 12px 50px
+                        align-items: center
+                        display: flex
+                        .button
+                            color: rgb(255, 255, 255)
+                            cursor: pointer
+                        .play, .pause
+                            display: none
+                            font-size: 68px
+                        .active
+                            display: block
+                        .fa-backward, .fa-arrow-rotate-left
+                            font-size: 36px
+        .exam-bar
+            position: relative
+            // width: 1134px
+            width: 70%
+            height: 41px
+            border-radius: 41px
+            background-color: rgba(216, 216, 216, 0.4)
+            .bar
+                position: absolute
+                left: 0
+                // width: 229px
+                height: 41px
+                background-color: rgb(255, 255, 255)
+                border-radius: 41px
+            .bar--1
+                width: calc( 100% - 80% )
+            .bar--2
+                width: calc( 100% - 60% )
+            .bar--3
+                width: calc( 100% - 40% )
+            .bar--4
+                width: calc( 100% - 20% )
+            .bar--5
+                width: 100%
+            .num
+                font-size: 36px
+            .num--1, .num--2
+                color: rgb(255, 255, 255)
+            .num--3, .num--4, .num--5
+                color: rgb(0, 167, 185)
+
+
+@media ( max-width: 1200px )
+    body
+        .disc-cover
+        .info
+            width: 90%
+        .audio
+            width: 90%
+
+@media ( max-width: 767px )
+    body
+        .disc-cover
+            .cover
+                width: 100%
+                height: 100%
+                transform: translateX(-20%)
+                img
+                    width: 100%
+            .video
+                width: 700px
+                height: 350px
+                transform: translateX(-40%)
+                .video-circle
+                .cover-circle
+                    width: 80px
+                    height: 80px
+        .info
+            width: 90%
+            .description
+                font-size: 24px
+                margin: 0px auto 100px
+            .next
+                .btn
+        .audio
+            display: block
+            width: 90%
+            .rwd-audio
+                .disc
+                    display: block
+                    img
+                .audio-controls
+                    #player-controls
+                        .control
+                            .button
+                            .play, .pause
+                            .active
+                            .fa-backward, .fa-arrow-rotate-left
+            .exam-bar
+                width: 100%
+                height: 32px
+                border-radius: 32px
+                margin: 10px auto 50px
+                .bar
+                    height: 32px
+                    border-radius: 32px
+                .num
+                    font-size: 36px
+
+@media ( max-width: 576px )
+    body
+        .disc-cover
+            .cover
+            // .video
+            //     width: 600px
+            //     height: 300px
+            //     .cover-circle
+            //         width: 60px
+            //         height: 60px
+            .video
+                position: relative
+                width: 505px
+                height: 505px
+                border-radius: 0%
+                -webkit-transform: rotate(0.000001deg)
+                -webkit-border-radius: 0%
+                -moz-border-radius: 0%
+                transform: translateX(-30%)
+                z-index: -1
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6)
+                .video-circle
+                    border-radius: 0%
+                    object-fit: cover
+                .cover-circle
+                    display: none
+                    position: absolute
+                    z-index: 1030
+                    background: url(../images/cover-circle.png) center center / cover no-repeat
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    width: 102px
+                    height: 102px
+        .info
+            width: 90%
+            .description
+            .next
+                bottom: 5%
+                .btn
+        .audio
+            display: block
+            width: 90%
+            .rwd-audio
+                display: flex
+                align-items: center
+                .disc
+                    width: 40%
+                .audio-controls
+                    width: 60%
+                    #player-controls
+                        .control
+                            padding: 12px 20px
+                            .button
+                            .play, .pause
+                                font-size: 42px
+                            .active
+                            .fa-backward, .fa-arrow-rotate-left
+                                font-size: 24px
+
+
+@media (max-width: 480px)
+    body
+        .disc-cover
+            margin: 10px auto
+            align-items: center
+            .cover
+            .video
+                width: 350px
+                height: 150px
+                .video-circle
+                    object-fit: cover
+                    border-radius: 0%
+                .cover-circle
+                    display: none
+        .info
+            padding: 15px
+            border-radius: 12px
+            .description
+                font-size: 16px
+                line-height: 24px
+                margin: 0px auto 30px
+            .next
+                .btn
+                    font-size: 16px
+        .audio
+            width: 100%
+            margin: 0 auto
+            .rwd-audio
+                width: 90%
+                .disc
+                    width: 40%
+                .audio-controls
+                    width: 60%
+                    #player-controls
+                        justify-content: center
+                        display: flex
+                        .control
+                            padding: 20px
+                            .button
+                            .play, .pause
+                                font-size: 28px
+                            .active
+                            .fa-backward, .fa-arrow-rotate-left
+                                font-size: 28px
+            .exam-bar
+                margin: 0px auto 50px
+                width: 90%
+                height: 23px
+                border-radius: 23px
+                .bar
+                    height: 23px
+                    border-radius: 23px
+                .num
+                    font-size: 16px
+                    line-height: 23px

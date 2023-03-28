@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo-bg.jpg" type="image/x-icon">
+    <title>Re-Fresh</title>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- animsition.css -->
+    <link rel="stylesheet" href="./css/animsition.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VG9SH91F8L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VG9SH91F8L');
+    </script>
+</head>
+<body class="animsition">
+    <div class="cards">
+        <ul class="cards__inner">
+            <li class="card card--1"></li>
+            <li class="card card--2"></li>
+            <li class="card card--3"></li>
+            <li class="card card--4"></li>
+            <li class="card card--5"></li>
+        </ul>
+    </div>
+    <div class="subtitle">
+        <h1>TRAVEL AROUND TAIWAN <br>BY YOUR EARS! </h1>
+        <h4>The Sounds of Taiwan</h4>
+    </div>
+    <div id="player-controls">
+        <div class="control" onClick="playReply()">
+            <div class="button">
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+            </div>
+        </div>
+        <!-- <div class="control audio-controls" onClick="play()">
+            <div class="button play" >
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="button pause">
+                <i class="fas fa-pause"></i>
+            </div>
+            <audio class="bgm" id="music" src="./audio/index-bgm.mp3"></audio>
+            
+        </div> -->
+        <div class="control next">
+            <a class="button animsition-link" href="./exam1.html" data-animsition-in-class="fade-in"
+            data-animsition-in-duration="6000">
+                <img class="play-circle" src="./images/play-circle.svg" alt="">
+                <!-- <i class="fas fa-play"></i> -->
+            </a>
+        </div>
+        <div class="control next">
+            <a class="button animsition-link" href="./exam1.html" data-animsition-in-class="fade-in"
+            data-animsition-in-duration="6000">
+                <i class="fas fa-forward"></i>
+            </a>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h4>Click to Start</h4>
+    </div>
+    <!-- <div class="logo">
+        <div class="logo__inner">
+            <img src="./images/logo.png" alt="">
+        </div>
+    </div> -->
+
+    
+
+    
+
+    
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="./js/animsition.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.animsition').animsition();
+        });
+    </script>
+
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+    <script src="./js/index.js"></script>
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

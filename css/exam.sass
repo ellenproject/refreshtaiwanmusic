@@ -1,0 +1,341 @@
+*
+    margin: 0
+    padding: 0
+    max-width: 100%
+    position: relative
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+
+body
+    position: relative
+    background-color: rgb(0, 167, 185)
+    font-family: 'Roboto', sans-serif
+    height: 100vh
+    .exam
+        width: 90%
+        display: flex
+        text-align: center
+        justify-content: center
+        align-items: center
+        color: rgb(255, 255, 255)
+        margin: 0px auto
+        .logo
+            // width: 300px
+            // margin-right: 174px
+            width: 20%
+            margin-right: 70px
+            margin-top: 100px
+        .question
+            // width: 1222px
+            // height: 561px
+            width: 70%
+            border-radius: 41px
+            background-color: rgba(216, 216, 216, 0.4)
+            margin-top: 50px
+            padding-bottom: 70px
+            h1
+                margin: 34px
+                font-size: 40px
+                line-height: 57px
+            .images
+                display: flex
+                justify-content: center
+                .img__inner
+                    margin: 0px 69px
+                    img
+                        &:hover
+                            cursor: pointer
+                            transition: all .8s ease
+                            transform: scale(1.2)
+                    .text
+                        margin-top: 25px
+                        // font-size: 24px
+                        font-size: 18px
+    .audio
+        display: flex
+        text-align: center
+        justify-content: center
+        align-items: center
+        color: rgb(255, 255, 255)
+        margin: 20px auto
+        // width: 1667px
+        width: 100%
+        .rwd-audio
+            display: flex
+            align-items: center
+            width: 20%
+            .disc
+                width: 365px
+                img
+                    width: 100%
+            .audio-controls
+                display: none
+        .desk-exambar
+            width: 60%
+            .audio-controls
+                #player-controls
+                    justify-content: center
+                    display: flex
+                    .control
+                        padding: 12px 50px
+                        align-items: center
+                        display: flex
+                        .button
+                            color: rgb(255, 255, 255)
+                            cursor: pointer
+                        .play, .pause
+                            display: none
+                            font-size: 68px
+                        .active
+                            display: block
+                        .fa-backward, .fa-arrow-rotate-left
+                            font-size: 36px
+            .exam-bar
+                margin: 90px auto 0px
+                position: relative
+                // width: 1134px
+                width: 100%
+                height: 41px
+                border-radius: 41px
+                background-color: rgba(216, 216, 216, 0.4)
+                .bar
+                    position: absolute
+                    left: 0
+                    // width: 229px
+                    height: 41px
+                    background-color: rgb(255, 255, 255)
+                    border-radius: 41px
+                .bar--1
+                    width: calc( 100% - 80% )
+                .bar--2
+                    width: calc( 100% - 60% )
+                .bar--3
+                    width: calc( 100% - 40% )
+                .bar--4
+                    width: calc( 100% - 20% )
+                .bar--5
+                    width: 100%
+                .num
+                    font-size: 36px
+                .num--1, .num--2
+                    color: rgb(255, 255, 255)
+                .num--3, .num--4, .num--5
+                    color: rgb(0, 167, 185)
+    .modal
+        .modal-dialog
+            .modal-content
+                background-color: rgb(0, 0, 0)
+                .modal-header
+                    border-bottom: 0px
+                    position: relative
+                    .btn-close
+                        color: rgb(255, 255, 255)
+                    .fa-solid
+                        color: rgb(255, 255, 255)
+                        position: absolute
+                        right: 15px
+                .modal-body
+                    text-align: center
+                    font-size: 36px
+                    p
+                        color: rgb(255, 255, 255)
+                    .answer
+                        margin: 0px auto 20px
+                    .btn
+                        background-color: #242424
+                        color: rgb(255, 255, 255)
+                        &:hover
+                            transition: all .5s ease
+                            transform: scale(1.1)
+
+@media ( max-width: 1440px )
+    body
+        .exam
+            .logo
+            .question
+                margin-top: 60px
+                padding-bottom: 40px
+                h1
+                    font-size: 28px
+                    line-height: 1.5
+                .images
+                    .img__inner
+                        margin: 0px 20px
+                        img
+                        .text
+                            font-size: 20px
+        .audio
+            margin: 50px auto 0px
+            // width: 1667px
+            width: 100%
+            .rwd-audio
+                .disc
+                    img
+                .audio-controls
+            .desk-exambar
+                .audio-controls
+                    #player-controls
+                        .control
+                            .button
+                            .play, .pause
+                            .active
+                .exam-bar
+                    margin: 50px auto 50px
+                    .bar
+                    .num
+        .modal
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                    .modal-body
+                        .answer
+                        .btn
+
+@media ( max-width: 767px )
+    body
+        margin: 0 auto
+        .exam
+            display: block
+            .logo
+                margin: 90px auto
+                width: 90%
+            .question
+                width: 90%
+                margin: 60px auto 0px
+                padding-bottom: 40px
+                border-radius: 16px
+                h1
+                    font-size: 28px
+                    line-height: 1.5
+                .images
+                    .img__inner
+                        margin: 0px 20px
+                        img
+                        .text
+                            font-size: 20px
+        .audio
+            margin: 50px auto 0px
+            // width: 1667px
+            width: 100%
+            display: block
+            .rwd-audio
+                width: 100%
+                .disc
+                    img
+                .audio-controls
+                    display: block
+                    #player-controls
+                        justify-content: center
+                        display: flex
+                        .control
+                            padding: 12px 50px
+                            align-items: center
+                            display: flex
+                            .button
+                                color: rgb(255, 255, 255)
+                                cursor: pointer
+                            .play, .pause
+                                display: none
+                                font-size: 68px
+                            .active
+                                display: block
+                            .fa-backward, .fa-arrow-rotate-left
+                                font-size: 36px
+            .desk-exambar
+                width: 90%
+                margin: 0 auto
+                .audio-controls
+                    display: none
+                    #player-controls
+                        .control
+                            .button
+                            .play, .pause
+                            .active
+                .exam-bar
+                    margin: 50px auto 50px
+                    .bar
+                    .num
+        .modal
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                    .modal-body
+                        .answer
+                        .btn
+
+@media ( max-width: 480px )
+    body
+        margin: 0 auto
+        overflow-x: hidden
+        .exam
+            display: block
+            .logo
+                margin: 20px auto 10px
+                width: 30%
+            .question
+                width: 100%
+                margin: 0 auto
+                padding: 5px 0px 15px
+                border-radius: 16px
+                h1
+                    font-size: 14px
+                    line-height: 1.4
+                    margin: 12px
+                .images
+                    .img__inner
+                        margin: 0px
+                        img
+                        .text
+                            font-size: 14px
+                            margin-top: 0px
+        .audio
+            margin: 0 auto
+            // width: 1667px
+            width: 90%
+            display: block
+            .rwd-audio
+                width: 100%
+                .disc
+                    width: 40%
+                    img
+                .audio-controls
+                    width: 60%
+                    display: block
+                    #player-controls
+                        justify-content: center
+                        display: flex
+                        .control
+                            padding: 12px 20px
+                            align-items: center
+                            display: flex
+                            .button
+                            .play, .pause
+                                font-size: 24px
+                            .active
+                            .fa-backward, .fa-arrow-rotate-left
+                                font-size: 24px
+            .desk-exambar
+                .audio-controls
+                    display: none
+                    #player-controls
+                        .control
+                            .button
+                            .play, .pause
+                            .active
+                .exam-bar
+                    margin: 0px auto 50px
+                    height: 23px
+                    border-radius: 23px
+                    .bar
+                        height: 23px
+                        border-radius: 23px
+                    .num
+                        font-size: 16px
+                        line-height: 23px
+        .modal
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                    .modal-body
+                        font-size: 20px
+                        .answer
+                        .btn

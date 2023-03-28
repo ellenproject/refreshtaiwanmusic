@@ -1,0 +1,258 @@
+*
+    margin: 0
+    padding: 0
+    max-width: 100%
+    position: relative
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+$emptyStar: '☆'
+$solidStar: '★'
+$color: rgb(255,255,255)
+
+body
+    position: relative
+    font-family: 'Roboto', sans-serif
+    height: 100%
+    background: url(../images/bg-city.png) center center / cover no-repeat
+    background-color: rgb(0, 167, 185)
+    .epilog
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 120px auto 0px
+        .logo
+            width: 20%
+            margin: 0px 100px 0px 0px
+        .congra
+            .congra__inner
+                text-align: center
+                h1
+                    font-size: 72px
+                    color: rgb(255, 255, 255)
+                    font-style: italic
+                h6
+                    font-size: 16px
+                    color: rgb(255, 255, 255)
+                    margin: 8px auto 0px
+                .rating
+                    display: flex
+                    justify-content: center
+                    margin: 24px auto
+                    direction: rtl
+                    unicode-bidi: bidi-override
+                    user-select: none
+                    // input[type="radio"]
+                    //     display: none
+                    //     &:checked
+                    //         &~label::before
+                    //             content: $solidStar
+                    // label
+                    //     float: right
+                    //     padding: 10px
+                    //     font-size: 36px
+                    //     color: #444
+                    //     transition: all .2s
+                    //     &::before
+                    //         content: $emptyStar
+                    //         font-size: 80px
+                    //         color: $color
+                    //         cursor: pointer
+                    //     &:hover
+                    //         &::before,
+                    //         &~label::before
+                    //             content: $solidStar
+                    img
+                        margin: 20px
+                .icon
+                    display: flex
+                    justify-content: center
+                    .share
+                        background-color: rgb(255,255,255)
+                        color: rgb(0, 167, 185)
+                        font-size: 24px
+                        border-radius: 24px
+                        padding: 15px 20px
+                        font-weight: 500
+                        font-style: italic
+                        // &:hover
+                        //     transition: all .8s ease
+                        //     background-color: rgb(0, 167, 185)
+                        //     color: rgb(255,255,255)
+                    .social
+                        display: flex
+                        .social-icon
+                            position: relative
+                            margin: 0px 16px
+                            width: 50px
+                            height: 50px
+                            border-radius: 25px
+                            background-color: rgb(255,255,255)
+                            color: rgb(0, 167, 185)
+                            .fa-brands
+                                font-size: 40px
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                transform: translate(-50%, -50%)
+                            &:hover
+                                transition: all .8s ease
+                                background-color: rgb(0, 167, 185)
+                                color: rgb(255,255,255)
+                    .again
+                        margin: 0 16px
+                        color: rgb(255,255,255)
+                        border: 2px solid transparent
+                        border-radius: 25px
+                        padding: 5px 20px
+                        .fa-solid
+                            font-size: 40px
+                        span
+                            font-size: 24px
+                        &:hover
+                            transition: all .8s ease
+                            border: 2px solid rgb(255, 255, 255)
+                            border-radius: 25px
+    .covers
+        margin: 130px auto 0px
+        .covers__inner
+            display: flex
+            justify-content: center
+            .cover
+                width: 300px
+                height: 300px
+                margin: 0px 10px
+                img
+                    width: 100%
+
+@media (max-width: 767px)
+    body
+        .epilog
+            display: block
+            margin: 0 auto
+            .logo
+                margin: 30px auto
+                text-align: center
+                width: 30%
+
+@media (max-width: 576px)
+    body
+        .epilog
+            .logo
+            .congra
+                .congra__inner
+                    h1
+                        font-size: 52px
+                    h6
+                    .rating
+                    .icon
+                        .share
+                        .social
+                            .social-icon
+                        .again
+                            margin: 0px
+                            width: 150px
+                            padding: 5px 10px
+                            .fa-solid
+                                font-size: 30px
+                            span
+                                font-size: 20px
+
+        .covers
+            margin: 40px auto 0px
+            .covers__inner
+                display: flex
+                justify-content: center
+                .cover
+                    width: 300px
+                    height: 300px
+                    margin: 0px
+                    img
+                        width: 100%
+
+
+@media (max-width: 480px)
+    body
+        position: relative
+        font-family: 'Roboto', sans-serif
+        height: 100vh
+        background: url(../images/bg-city.png) left 20% bottom 0% / cover no-repeat
+        background-color: rgb(0, 167, 185)
+        .epilog
+            display: block
+            margin: 30px auto 0px
+            .logo
+                width: 30%
+                margin: 0px auto
+            .congra
+                margin: 20px auto 0px
+                .congra__inner
+                    text-align: center
+                    h1
+                        font-size: 32px
+                    h6
+                        font-size: 8px
+                    .rating
+                        width: 100%
+                        display: flex
+                        justify-content: center
+                        margin: 0 auto
+                        input[type="radio"]
+                        label
+                            &::before
+                                content: $emptyStar
+                                font-size: 40px
+                                color: $color
+                                cursor: pointer
+
+                        label, .like
+                            float: right
+                            padding: 10px
+                            font-size: 36px
+                            color: #444
+                            transition: all .2s
+                        img
+                            margin: 20px 10px 0px
+                            width: 40px
+                            height: 35px
+                    .icon
+                        display: block
+                        justify-content: center
+                        .share
+                            background-color: rgb(0, 167, 185)
+                            color: rgb(255, 255, 255)
+                            font-size: 18px
+                            border-radius: 0px
+                            padding: 8px 0px
+                            width: 30%
+                            margin: 0 auto
+                            border-bottom: 1px solid rgb(255, 255, 255)
+                        .social
+                            display: flex
+                            justify-content: center
+                            margin: 10px auto 0px
+                            .social-icon
+                                margin: 0px 16px
+                                width: 30px
+                                height: 30px
+                                .fa-brands
+                                    font-size: 20px
+                        .again
+                            width: 150px
+                            margin: 24px auto 0px
+                            border: 1px solid rgb(255, 255, 255)
+                            border-radius: 12px
+                            padding: 10px 20px
+                            .fa-solid
+                                font-size: 16px
+                            span
+                                font-size: 14px
+        .covers
+            margin: 40px auto 0px
+            .covers__inner
+                display: flex
+                justify-content: center
+                .cover
+                    width: 300px
+                    height: 300px
+                    img
+                        width: 100%

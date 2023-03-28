@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: url(../images/bg-city.png) center center/cover no-repeat;
+  background-color: #00a7b9;
+}
+
+body .epilog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 120px auto 0px;
+}
+
+body .epilog .logo {
+  width: 20%;
+  margin: 0px 100px 0px 0px;
+}
+
+body .epilog .congra .congra__inner {
+  text-align: center;
+}
+
+body .epilog .congra .congra__inner h1 {
+  font-size: 72px;
+  color: white;
+  font-style: italic;
+}
+
+body .epilog .congra .congra__inner h6 {
+  font-size: 16px;
+  color: white;
+  margin: 8px auto 0px;
+}
+
+body .epilog .congra .congra__inner .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 24px auto;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .epilog .congra .congra__inner .rating img {
+  margin: 20px;
+}
+
+body .epilog .congra .congra__inner .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .epilog .congra .congra__inner .icon .share {
+  background-color: white;
+  color: #00a7b9;
+  font-size: 24px;
+  border-radius: 24px;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+body .epilog .congra .congra__inner .icon .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .epilog .congra .congra__inner .icon .social .social-icon {
+  position: relative;
+  margin: 0px 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: #00a7b9;
+}
+
+body .epilog .congra .congra__inner .icon .social .social-icon .fa-brands {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .epilog .congra .congra__inner .icon .social .social-icon:hover {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  background-color: #00a7b9;
+  color: white;
+}
+
+body .epilog .congra .congra__inner .icon .again {
+  margin: 0 16px;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 5px 20px;
+}
+
+body .epilog .congra .congra__inner .icon .again .fa-solid {
+  font-size: 40px;
+}
+
+body .epilog .congra .congra__inner .icon .again span {
+  font-size: 24px;
+}
+
+body .epilog .congra .congra__inner .icon .again:hover {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+body .covers {
+  margin: 130px auto 0px;
+}
+
+body .covers .covers__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .covers .covers__inner .cover {
+  width: 300px;
+  height: 300px;
+  margin: 0px 10px;
+}
+
+body .covers .covers__inner .cover img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  body .epilog {
+    display: block;
+    margin: 0 auto;
+  }
+  body .epilog .logo {
+    margin: 30px auto;
+    text-align: center;
+    width: 30%;
+  }
+}
+
+@media (max-width: 576px) {
+  body .epilog .congra .congra__inner h1 {
+    font-size: 52px;
+  }
+  body .epilog .congra .congra__inner .icon .again {
+    margin: 0px;
+    width: 150px;
+    padding: 5px 10px;
+  }
+  body .epilog .congra .congra__inner .icon .again .fa-solid {
+    font-size: 30px;
+  }
+  body .epilog .congra .congra__inner .icon .again span {
+    font-size: 20px;
+  }
+  body .covers {
+    margin: 40px auto 0px;
+  }
+  body .covers .covers__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .covers .covers__inner .cover {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+  }
+  body .covers .covers__inner .cover img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background: url(../images/bg-city.png) left 20% bottom 0%/cover no-repeat;
+    background-color: #00a7b9;
+  }
+  body .epilog {
+    display: block;
+    margin: 30px auto 0px;
+  }
+  body .epilog .logo {
+    width: 30%;
+    margin: 0px auto;
+  }
+  body .epilog .congra {
+    margin: 20px auto 0px;
+  }
+  body .epilog .congra .congra__inner {
+    text-align: center;
+  }
+  body .epilog .congra .congra__inner h1 {
+    font-size: 32px;
+  }
+  body .epilog .congra .congra__inner h6 {
+    font-size: 8px;
+  }
+  body .epilog .congra .congra__inner .rating {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  body .epilog .congra .congra__inner .rating label::before {
+    content: "☆";
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  body .epilog .congra .congra__inner .rating label, body .epilog .congra .congra__inner .rating .like {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  body .epilog .congra .congra__inner .rating img {
+    margin: 20px 10px 0px;
+    width: 40px;
+    height: 35px;
+  }
+  body .epilog .congra .congra__inner .icon {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .epilog .congra .congra__inner .icon .share {
+    background-color: #00a7b9;
+    color: white;
+    font-size: 18px;
+    border-radius: 0px;
+    padding: 8px 0px;
+    width: 30%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+  }
+  body .epilog .congra .congra__inner .icon .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto 0px;
+  }
+  body .epilog .congra .congra__inner .icon .social .social-icon {
+    margin: 0px 16px;
+    width: 30px;
+    height: 30px;
+  }
+  body .epilog .congra .congra__inner .icon .social .social-icon .fa-brands {
+    font-size: 20px;
+  }
+  body .epilog .congra .congra__inner .icon .again {
+    width: 150px;
+    margin: 24px auto 0px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 10px 20px;
+  }
+  body .epilog .congra .congra__inner .icon .again .fa-solid {
+    font-size: 16px;
+  }
+  body .epilog .congra .congra__inner .icon .again span {
+    font-size: 14px;
+  }
+  body .covers {
+    margin: 40px auto 0px;
+  }
+  body .covers .covers__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .covers .covers__inner .cover {
+    width: 300px;
+    height: 300px;
+  }
+  body .covers .covers__inner .cover img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=finish.css.map */
